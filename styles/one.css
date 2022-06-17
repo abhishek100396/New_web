@@ -1,0 +1,17 @@
+header{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(166, 188, 206);
+    font-weight: bold;
+    font-size: large;
+}
+
+body{
+    background-image: url(./plain.webp);
+}
+
+h1{
+    background-color: rgb(124, 94, 152);
+    border-radius: 5px;
+    font-family: monospace;
+}

@@ -4,7 +4,7 @@
     </head>
     <body>
         <header>
-            <img src="./logo.jpg" alt='Random Logo'/>
+            <img src="./logo.jpg" alt='Random Logo'/><br/><br/>
 
             <a href='./index.html' > Home</a>
             <a href='./about.html' > About Us</a>
@@ -13,28 +13,41 @@
             <a href='./contact.html' > Contact</a>
             <a href="./form.html" > Form</a>
             <a href="./registration.html" >Registration</a>
+
+            <link rel="stylesheet" href="./styles/one.css" />
+            <style>
+                td{
+                    border-radius: 15px;
+                }
+                input{
+                   border-radius: 4px;
+                }
+                label{
+                    font-weight: bold;
+                }
+            </style>
         </header>
 
       <div>
         <table>
-            <thead>
-                <th><h2>Send Us an Email</h2></th>
+            <thead style="text-decoration: underline; text-decoration:style ;">
+                <th><h2>Email Us</h2></th>
                 <th><h2>Visit Us</h2></th>
             </thead>
             <tbody>
                 <tr>
-                    <td>
+                    <td style="background-color:rgb(200, 214, 229) ;">
                         <form>
                             <label>&nbsp; Name: &nbsp;</label>
-                            <input placeholder="Please Enter Name" type="text" required>
+                            <input  placeholder="Please Enter Name" type="text" required>
                             <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: &nbsp;&nbsp;&nbsp;&nbsp;</label> 
-                            <input placeholder="Enter Valid Email" type="email" required> <br/><br/>
+                            <input  placeholder="Enter Valid Email" type="email" required> <br/><br/>
                             <label>&nbsp; Phone: &nbsp;</label> 
-                            <input placeholder="10-Digit Number" type="number"> 
+                            <input  placeholder="10-Digit Number" type="number"> 
                             <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subject: &nbsp;</label> 
                             <input type="text"> <br/><br/>
                             <label>Services &nbsp;</label>
-                            <select>
+                            <select style="border-radius: 4px;">
                                 <option>--Select--</option>
                                 <option>Java FullStack </option>
                                 <option>Python FullStack </option>
@@ -44,12 +57,12 @@
                                 <option>Others</option>
                             </select> <br/> <br/>
                             <label>Message &nbsp;</label>
-                            <textarea cols="40" rows="5"></textarea> <br/> <br/>
-                            <button>Submit Comment</button>
+                            <textarea style="border-radius: 5px;" cols="40" rows="5"></textarea> <br/> <br/>
+                            <button style="background-color: rgb(105, 108, 112); border-radius: 4px; font-weight: bold">Submit Comment</button>
                         </form>
                     </td>
                     <td>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d747.7362981452258!2d77.7017278117232!3d12.95949057202126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1654835945094!5m2!1sen!2sin" width="720" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d747.7362981452258!2d77.7017278117232!3d12.95949057202126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1654835945094!5m2!1sen!2sin" width="710" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
                     </td>
                 </tr>
             </tbody>
