@@ -4,14 +4,33 @@ header{
     background-color: rgb(166, 188, 206);
     font-weight: bold;
     font-size: large;
+    border-radius: 8px;
 }
 
 body{
-    background-image: url(./plain.webp);
+    background-image: url(./best.jpg);
+    background-position: center;
 }
-
 h1{
     background-color: rgb(124, 94, 152);
     border-radius: 5px;
     font-family: monospace;
+}
+p{
+    padding: 2px;
+    word-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+td{
+    border-radius: 15px;
+}
+input{
+   border-radius: 4px;
+}
+label{
+    font-weight: bold;
+}
+select{
+    border-radius: 4px;
 }
