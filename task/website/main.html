@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <style>
+       li:hover{
+        background: #575757;
+        border-radius: 7px;
+        padding: 2px;
+        font-weight: bold;
+       }
+       li{
+        font-size:large; 
+        
+        }
+    </style>    
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <img src="./logo.png" class="rounded float-start" alt="logo">
+        <div class="container">  
+            <a href="#" class="navbar-brand" style=" font-weight: bold;">WEB_DOM</a>
+            <button 
+              type="button"
+              class="navbar-toggler"
+              data-bs-target="#navbarNav"
+              data-bs-toggle="collapse"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle Navbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="main.html" class="nav-link text-white ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white ">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white ">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link text-white ">Services</a> -->
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-white ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video class=" img-fluid" autoplay loop muted>
+                    <source src="./random.webm" type="video/webm">
+                </video>
+              </div>
+              <div class="carousel-item">
+                <img src="./two.jpeg" class="w-100 vh-120 justify-content-center align-items-center" alt="second">
+              </div>
+              <div class="carousel-item">
+                <img src="./three.webp" class="w-100 vh-120 justify-content-center align-items-center" alt="third">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  
+    
+    <div class="container my-5 d-grid gap-5">
+        <div class="p-5 border bg-primary">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam est magnam, ipsa eveniet aut quos nihil quam veritatis deserunt, id a quaerat deleniti consequatur, quasi rerum aliquam! Ducimus, laboriosam? Aspernatur?
+            </p>      
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam est magnam, ipsa eveniet aut quos nihil quam veritatis deserunt, id a quaerat deleniti consequatur, quasi rerum aliquam! Ducimus, laboriosam? Aspernatur?
+            </p>      
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam est magnam, ipsa eveniet aut quos nihil quam veritatis deserunt, id a quaerat deleniti consequatur, quasi rerum aliquam! Ducimus, laboriosam? Aspernatur?
+            </p>      
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam est magnam, ipsa eveniet aut quos nihil quam veritatis deserunt, id a quaerat deleniti consequatur, quasi rerum aliquam! Ducimus, laboriosam? Aspernatur?
+            </p>      
+        </div>
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var nav=document.querySelector('nav');
+
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset >120){
+               nav.classList.add('bg-dark','shadow');
+            } else
+            {
+                nav.classList.remove('bg-dark','shadow');
+            }
+        });
+    </script>
+
+</body>
+</html>
